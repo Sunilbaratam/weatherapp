@@ -7,14 +7,30 @@
     <style>
         /* Custom styles can be added here */
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
             background-color: #f2f2f2;
         }
+
         .container {
+            flex: 1;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-top: 20px;
+            max-width: 400px; /* Optional: Set a max-width for better readability */
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -27,6 +43,9 @@
         <p><strong>Humidity:</strong> {{ weather.main.humidity }}%</p>
         <p><strong>Weather:</strong> {{ weather.weather[0].description }}</p>
     </div>
+
+    <!-- Footer with heart emoji -->
+    <footer>&#x1F496; Made with love</footer>
 
     <!-- Add Bootstrap JS and jQuery scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

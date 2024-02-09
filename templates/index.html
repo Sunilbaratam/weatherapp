@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Weather App</title>
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Custom styles can be added here */
         body {
-            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-        .container {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .weather-card {
+            max-width: 400px;
+            width: 100%;
             padding: 20px;
-            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
+    <title>Weather App</title>
 </head>
 <body>
-    <div class="container">
+    <div class="weather-card">
         <h1 class="text-center">Weather App</h1>
         <form method="post" action="/weather" class="text-center">
             <div class="form-group">
@@ -30,9 +35,8 @@
         </form>
     </div>
 
-    <!-- Add Bootstrap JS and jQuery scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
